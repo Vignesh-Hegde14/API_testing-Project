@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "c6c7dc60-bbbf-4c51-9566-652eaf07c972",
+		"name": "API-testing-project-vigneshh.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50931924",
+		"_collection_link": "https://www.postman.com/vigneshhegde14-2741381/api-testing-project/collection/50931924-c6c7dc60-bbbf-4c51-9566-652eaf07c972?action=share&source=collection_link&creator=50931924"
+	},
+	"item": [
+		{
+			"name": "The Test",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{TestURL}}books",
+					"host": [
+						"{{TestURL}}books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filter Request using get",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Post testing",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "postmanrulz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"31ab05fd-19dd-4596-bdd6-59b44026f4d1\",\r\n        \"title\": \"Stranger Things\",\r\n        \"author\": \"Duffer Brothers\",\r\n        \"genre\": \"fiction\",\r\n        \"yearPublished\": 2013\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{TestURL}}books",
+					"host": [
+						"{{TestURL}}books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patch testing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{TestURL}}books/:id",
+					"host": [
+						"{{TestURL}}books"
+					],
+					"path": [
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "ad11c3df-fd6f-48ee-a5e6-8bab7417bb7b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete test",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "postmanrulz",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{TestURL}}books/:id",
+					"host": [
+						"{{TestURL}}books"
+					],
+					"path": [
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "37fca617-2be6-44f8-889a-524d9c943032"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "TestURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
