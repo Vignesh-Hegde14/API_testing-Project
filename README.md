@@ -27,6 +27,8 @@ TestURL – https://library-api.postmanlabs.com/books
 1. Import the collection into Postman
 2. Set the TestURL environment variable
 3. Run requests manually or via Collection Runner
+
+   ## OR
    
 ## Link for the Complete Project ScreenRecording
 -https://youtu.be/ifSaY83OryA?si=X3LZBX_HAKzBOohg
