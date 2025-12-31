@@ -11,8 +11,7 @@ This project demonstrates API testing skills using **Postman** by validating CRU
 - GitHub
 
 ##  Project Structure
-postman/
- └── API-testing-project-vigneshh.postman_collection.json
+postman/API-testing-project-vigneshh.postman_collection.json
 
 ## API Endpoints Covered
 - GET /books
